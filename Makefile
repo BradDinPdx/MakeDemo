@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-I.
 DEPS = hellomake.h
-OBJ = hellomake.o hellofunc.o
+OBJ = hellomake.c hellofunc.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
